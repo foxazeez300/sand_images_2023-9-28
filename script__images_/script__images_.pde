@@ -47,15 +47,16 @@ void setup() {
   String landScapeImage = "imagesUsed/Landscape & Square Images/";
   String obiImage = "Obi-wan-star-wars-jedi-23864621-800-600.jpg";
   String bikeImage = "bike.jpg";
-  String darthImage = "10-star-wars-darth-vader-portrait-wallpaper-1-325x485.jpg";
-  picBackground = loadImage( imagesPath + landScapeImage + obiImage); //concatenation
+  String DarthImage = "10-star-wars-darth-vader-portrait-wallpaper-1-325x485.jpg";
+  println(imagesPath + landScapeImage + obiImage);
+  picBackground = loadImage( imagesPath + landScapeImage + obiImage ); //concatenation
   //bikeForeground = loadImage();
   //darthVaderPortrait = loadImage();
   //
   //DIVs
   //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  rect( bikeX, bikeY, bikeWidth, bikeHeight ); //bike image
-  rect( darthX, darthY, darthWidth, darthHeight ); //Darth Image
+  rect( bikeX, bikeY, bikeWidth, bikeHeight ); //bikeImage
+  rect( darthX, darthY, darthWidth, darthHeight ); //DarthImage
   //
 } //End setup
 //
