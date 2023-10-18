@@ -49,7 +49,11 @@ void setup() {
   String bikeImage = "bike.jpg";
   String DarthImage = "10-star-wars-darth-vader-portrait-wallpaper-1-325x485.jpg";
   println(imagesPath + landScapeImage + obiImage);
+  println(imagesPath + landScapeImage + bikeImage);
+  println(imagesPath + landScapeImage + DarthImage);
   picBackground = loadImage( imagesPath + landScapeImage + obiImage ); //concatenation
+  bikeForeground = loadImage( imagesPath + landScapeImage + bikeImage ); //concatenation
+  darthVaderPortrait = loadImage( imagesPath + landScapeImage + DarthImage ); //concatenation
   //bikeForeground = loadImage();
   //darthVaderPortrait = loadImage();
   //
