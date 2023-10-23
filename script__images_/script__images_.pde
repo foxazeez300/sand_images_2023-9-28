@@ -1,4 +1,4 @@
-/* Program Notes
+/* Program Notes //<>//
  - Finish Nightmode: medium and difficult
  */
 //Global Variables
@@ -28,6 +28,7 @@ void setup() {
   } else {
     nightmode=false;
   }
+  // DIV rect() Variable Population
   backgroundImageX = appWidth*0;
   backgroundImageY = appHeight*0;
   backgroundImageWidth = appWidth-1;
@@ -40,6 +41,15 @@ void setup() {
   darthY = appHeight*5/8;
   darthWidth = bikeWidth; 
   darthHeight = bikeHeight;
+  //Aspect ratio change
+  bikeWidth = ; 
+  bikeHeight = ;
+  darthWidth = ; 
+  darthHeight = ;
+  //origonal aspect ratio of images to change
+  //compare the side lengths to see which is bigger
+  //"compress" the biggest side into the rect()
+  //Multiple the Image's Aspect Ratio to the smaller side
   //Concatenation of Pathways
   String up = "..";
   String open = "/";
@@ -52,10 +62,8 @@ void setup() {
   println(imagesPath + landScapeImage + bikeImage);
   println(imagesPath + landScapeImage + DarthImage);
   picBackground = loadImage( imagesPath + landScapeImage + obiImage ); //concatenation
-  bikeForeground = loadImage( imagesPath + landScapeImage + bikeImage ); //concatenation
-  darthVaderPortrait = loadImage( imagesPath + landScapeImage + DarthImage ); //concatenation
-  //bikeForeground = loadImage();
-  //darthVaderPortrait = loadImage();
+  bikeForeground = loadImage( imagesPath + landScapeImage + bikeImage ); 
+  darthVaderPortrait = loadImage( imagesPath + landScapeImage + DarthImage ); 
   //
   //DIVs
   //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
@@ -90,8 +98,8 @@ void draw() {
     //println(nightmode);
   }
   image( picBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
-  //image( bikeForeground, ); //bike image, purpose: see circles in aspect ratio
-  //image( darthVaderPortrait, ); //Darth Vader in Portrait, geometry is landscape, thus centered
+  image( bikeForeground, bikeX, bikeY, bikeWidth, bikeHeight ); //bike image, purpose: see circles in aspect ratio
+  image( darthVaderPortrait, darthX, darthY, darthWidth, darthHeight ); //Darth Vader in Portrait, geometry is landscape, thus centered
 } //End draw
 //
 void keyPressed() {
